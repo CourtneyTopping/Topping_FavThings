@@ -1,22 +1,8 @@
 @import '_vars';
-@import 'modules/_navbar';
+@import 'modules/_section1';
 @import 'modules/_users';
 @import 'modules/_lightbox';
 
-body {
-    color: $main-color;
-    background-color: $body-bg;
-}
-
-h1, h2, h3 { color: $heading-color }
-
-.panel { min-height: 80vh; }
-
-.panel:nth-child(odd) {
-    background-color: salmon;
+h1, h2 {
     color: white;
 }
-
-#to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
-
-@import 'modules/_footer'

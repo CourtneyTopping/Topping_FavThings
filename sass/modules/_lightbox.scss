@@ -8,7 +8,6 @@
     top: 0;
     z-index: 5000;
     padding: 20px;
-
     background-color: rgba(0, 0,0, 0.85);
 
     .sidebar {
@@ -17,6 +16,7 @@
     
     .lb-content {
         flex: 3;
+        color: white;
     }
 
     img { max-width: 250px; }
@@ -27,7 +27,7 @@
         cursor: pointer;
         font-size: 2em;
         position: fixed;
-        border: thin solid white;
+        border: thin solid blue;
         padding: 2px 14px 5px;
         border-radius: 50%;
         background-color: rgba(255,255,255,0.25);

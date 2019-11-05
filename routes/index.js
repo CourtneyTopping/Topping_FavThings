@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
-    let query = "SELECT ID, Image, Song, Artist, Genre FROM tbl_songs";
+    let query = "SELECT ID, Image, Song, Artist, Genre, About FROM tbl_songs";
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
@@ -15,12 +15,12 @@ router.get('/', (req, res) => {
         //console.log(result); // should see objects wrapped in an array
 
         // render the home view with dynamic data
-        res.render('home', { people: result });
+        res.render('home', { songs: result });
     
     })
 })
 //localhost:3000
-router.get('/:id', (req, res) => {
+router.get('/users/:id', (req, res) => {
     console.log('hit a dynamic route!');
     console.log(req.params.id);
 
@@ -37,14 +37,14 @@ router.get('/:id', (req, res) => {
             //item = item.trim(); // remove the extra spaces for each word
 
             //return item;
-        })
+        
 
-       // console.log('after split: ', result[0]);
+       console.log('after split: ', result[0]);
 
         // send DB query back to browser
         // render the home view with dynamic data
         res.json(result);
-    
+    })
     })
 
 

@@ -2,14 +2,9 @@
 
 const myVM = (() => {
     // get the user buttons and fire off an async DB query with Fetch
-    let userButtons = document.querySelectorAll('.u-link'),
+    let songButtons = document.querySelectorAll('.u-link'),
         lightbox = document.querySelector('.lightbox');
 
-        function renderSocialMedia(socialMedia) {
-            return `<ul class="u-social">
-                ${socialMedia.map(item => `<li>${item}</li>`).join('')}
-            </ul>`
-        }
 
         function songInfo(songs) { // person is the databaase result
             let targetDiv = document.querySelector('.lb-content'),
@@ -18,8 +13,8 @@ const myVM = (() => {
                 let songContent = `
                 <h2>${songs.Song}</h2>
                 <h3>${songs.Artist}</h3>
-                <h4>${songs.Album}</h4>
-                <p>${songs.Genre}</p>
+                <h5>Album: ${songs.Album}</h5>
+                <h5>Genre: ${songs.Genre}</h5>
                 <p>${songs.About}</p>
                 `
 
@@ -33,7 +28,7 @@ const myVM = (() => {
 
         }
 
-        function getUserData(event) {
+        function getSongData(event) {
             event.preventDefault(); //kill default tag in behaviour (dont navigate anywhere)
            // debugger;
             let imgSrc = this.previousElementSibling.getAttribute('src');
@@ -52,7 +47,7 @@ const myVM = (() => {
                     console.log(err)
                 })}
 
-        userButtons.forEach(button => button.addEventListener('click', getUserData));
+        songButtons.forEach(button => button.addEventListener('click', getSongData));
 
         lightbox.querySelector('.close').addEventListener('click', function() {
             lightbox.classList.remove('show-lb');

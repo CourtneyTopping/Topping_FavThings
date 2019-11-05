@@ -1,29 +1,24 @@
-<section id="section1" class="panel">
-    <div class="bio-info">
-        <h1 class="p-name">Some generic info here...</h1>
-    </div>
+
+     <section class="grid-container full" id="section1">
+      <div class="grid-x" id="wrapper">
+        <div class="cell small-6 medium-6 large-8" id="aboutText">
+          <h2 id="barBlock">Music is a passion of mine.</h2>
+          <p>     Here are some of my current favourite songs to share with you.</p>
+        </div>
+        </div>
+    </section>
 
 </section>
 {{!-- <section id="section2" class="panel">panel 2</section> --}}
-<section id="section3" class="panel">
-    <h1 class="user-panel-heading">
-        Welcome to our awesome team section!
-    </h1>
-
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit animi, vero perspiciatis
-        accusantium nisi molestiae, nostrum quisquam unde deleniti, expedita dicta ab quae possimus omnis amet!
-        Modi, nemo autem!Ducimus dolorum aliquid id quae vel sapiente, omnis iste fugiat magni rem
-        exercitationem. Facilis voluptatum praesentium animi rem provident, nam rerum reiciendis perspiciatis
-        optio dolorem magnam temporibus neque quo cum.
-    </p>
-
-    <h4>Click on a team member below to learn more about them.</h4>
+<section id="section3">
+    <div class="user-panel-heading">
+    <h2>My Current Favourites</h2>
+</div>
 
     <div class="team">
         <!-- loop through all our team members and put their info on the page -->
         <!-- this is exactly like a forEach loop with plain JS -->
-        {{#each people}}
+        {{#each songs}}
         <div class="user-panel">
             <img class="u-image" src="images/{{ Image }}" alt="image">
 
@@ -53,5 +48,4 @@
         </div>
     </section>
 </section>
-<section id="section4" class="panel">panel 4</section>
-<section id="section5" class="panel"></section>
+

@@ -1,2 +1,95 @@
-nav{background-color:pink}nav ul{margin:0;padding:0}nav ul li{display:inline}nav a{text-decoration:none}.team{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-evenly}.team .user-panel{flex:0 1 200px;text-align:center;padding:8px}.team .user-panel .u-avatar{max-width:200px}.team .user-panel .u-link{display:block;text-decoration:none;margin:0 auto;background-color:rgba(255,255,255,0.8);padding:5px}.team .user-panel h1,.team .user-panel h3{margin:5px 0}@media screen and (min-width: 900px){.team .user-panel{flex:1 1}.team .user-panel .u-avatar{max-width:300px}}.lightbox{display:none;flex-direction:row;min-height:100vh;width:100%;position:fixed;top:0;z-index:5000;padding:20px;background-color:rgba(0,0,0,0.85)}.lightbox .sidebar{flex:1}.lightbox .lb-content{flex:3}.lightbox img{max-width:250px}.lightbox .close{right:24px;top:10px;cursor:pointer;font-size:2em;position:fixed;border:thin solid white;padding:2px 14px 5px;border-radius:50%;background-color:rgba(255,255,255,0.25)}.show-lb{display:flex !important}.u-social li{display:inline-block;padding:10px}body{color:#fff;background-color:#000}h1,h2,h3{color:#ff0}.panel{min-height:80vh}.panel:nth-child(odd){background-color:salmon;color:white}#to-top{position:fixed;bottom:10px;right:10px;display:none}footer{color:orange}ul{margin:0;padding:0}ul li{display:inline}ul li a{text-decoration:none}
-/*# sourceMappingURL=main.css.map */
+h1 {
+    color: #fff;
+}
+header {
+color: midnightblue;
+}
+
+.error-section {
+    background: rgb(0,209,224); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0,209,224,1) 0%, rgba(1,165,192,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,209,224,1) 0%,rgba(1,165,192,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,209,224,1) 0%,rgba(1,165,192,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d1e0', endColorstr='#01a5c0',GradientType=0 );}
+
+
+#section1{
+    background-image:url(/images/headphones.jpg);
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+#section3 {
+    text-align: center;
+}
+#aboutText {
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 80px;
+    margin-left: 20px;
+    color: white;
+}
+
+#aboutText h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+}
+
+#barBlock {
+    color: #fff;
+}
+
+.user-panel-heading { 
+    background-color: #0d203b;
+    padding: 10px;
+    color: black;
+}
+.u-link {
+        font-family: 'Staatliches', cursive;
+        color: navy;
+    
+}
+
+.team{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    background: rgb(0,209,224); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0,209,224,1) 0%, rgba(1,165,192,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,209,224,1) 0%,rgba(1,165,192,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,209,224,1) 0%,rgba(1,165,192,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d1e0', endColorstr='#01a5c0',GradientType=0 );}
+.team .user-panel{flex:0 1 200px;text-align:center;padding:8px}
+.team .user-panel .u-avatar{max-width:200px}
+.team .user-panel .u-link{display:block;text-decoration:none;margin:0 auto;background-color:rgba(255,255,255,.8);padding:5px}
+.team .user-panel h1,.team .user-panel h3{margin:5px 0;}
+#promoImg img{width:100%;height:400px;background-size:cover}
+@media screen and (min-width: 900px){.team .user-panel{flex:1 1}
+.team .user-panel .u-avatar{max-width:300px}}
+.lightbox{display:none;flex-direction:row;min-height:100vh;width:100%;position:fixed;top:0;z-index:5000;padding:20px;background-color:rgba(0,0,0,.85)}
+.lightbox .sidebar{flex:1}
+.lightbox .lb-content{flex:3; color:white; padding: 20px;}
+.lightbox img{max-width:250px}
+.lightbox .close{right:24px;top:10px;cursor:pointer;font-size:2em;position:fixed;border:thin solid #fff;padding:2px 14px 5px;border-radius:50%;background-color:rgba(255,255,255,.25)}
+.show-lb{display:flex !important}
+.u-social li{display:inline-block;padding:10px;}
+body{color:#000;background-color:#fff}
+h1,h2,h3{
+    color:white;
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;
+}
+h3 {
+    font-size: 20px;
+}
+h5,p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.panel{min-height:80vh}
+.panel:nth-child(odd){background-color:salmon;color:#fff}
+#to-top{position:fixed;bottom:10px;right:10px;display:none}/*# sourceMappingURL=main.css.map */
+
